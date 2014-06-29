@@ -1,0 +1,3 @@
+[submodule "stand"]
+  path = js
+  url = git@github.com:hellocreep/stand.git
