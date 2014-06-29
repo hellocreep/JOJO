@@ -1,0 +1,11 @@
+#main {
+  position: relative;
+}
+
+.stand-img {
+  position: absolute;
+  right: 200px;
+  top: 100px;
+  width: 400px;
+  border-radius: 200px;
+}
