@@ -1,0 +1,15 @@
+{
+  "theme": "#F31919",
+  "standName": "Magician Red",
+  "standPic": "magician-red.jpg",
+  "masterName": "Moammed Abdul",
+  "masterPic": "2.jpg",
+  "status": {
+    "破坏力": 4,
+    "速度": 4,
+    "射程距离": 3,
+    "持久力": 4,
+    "精密动作性": 3,
+    "成长性": 2
+  }
+}

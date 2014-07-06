@@ -10,9 +10,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/pure.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr.js"></script>
     </head>
@@ -20,18 +19,57 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-        <div class="container">
-            <div id="main">
-                <img class="stand-img" src="img/star-platinum.jpg">
+        <main id="main">
+            <div class="hero-img">
+                <img src="img/bg-main.jpg" alt="">
+                <canvas id="mask"></canvas>
             </div>
-        </div>
+            <div class="container">
+                <div class="pure-g stand-md">
+                    <div id="stand" class="pure-u-1-2"></div>
+                    <div class="pure-u-1-2">
+                        <div class="pure-g md info-md">
+                            <div class="pure-u-1-5 hd">
+                                <img class="stand-pic" src="img/star-platinum.jpg">
+                            </div>
+                            <div class="pure-u-4-5 bd">
+                                <h5>[STAND NAME]</h5>
+                                <p class="stand-name name">STAND NAME</p>
+                            </div>
+                        </div>
+                        <div class="pure-g md info-md">
+                            <div class="pure-u-1-5 hd">
+                                <img class="master-pic" src="img/star-platinum.jpg">
+                            </div>
+                            <div class="pure-u-4-5 bd">
+                                <h5>[MASTER NAME]</h5>
+                                <p class="master-name name">MASTER NAME</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
 
-        <!--
-        <script src="js/vendor/jquery-1.10.2.min.js"></script>
-        <script src="js/vendor/raphael-min.js"></script>
-        <script src="js/main.js"></script>
-        -->
+        <footer id="footer">
+            <div class="container">
+                <div class="stand-list-md">
+                    <h3 class="hd">星尘斗士</h3>
+                    <ul class="pure-g stand-list bd">
+                        <li class="pure-u-1-6"><a href="/data/info/star-platinum.json">白金之星</a></li>
+                        <li class="pure-u-1-6"><a href="/data/info/magician-red.json">红色魔术师</a></li>
+                        <li class="pure-u-1-6"><a href="/data/info/hierophant-green.json">绿色法皇</a></li>
+                        <li class="pure-u-1-6"><a href="/data/info/hermit-purple.json">隐者之紫</a></li>
+                    </ul>
+                </div>
+                <div class="stand-list-md">
+                    <h3 class="hd">不灭钻石</h3>
+                    <ul class="pure-g stand-list bd">
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
         <script data-main="js/main" src="js/vendor/require.js"></script>
     </body>
 </html>
