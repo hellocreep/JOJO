@@ -7,7 +7,7 @@ require.config({
     jquery: 'vendor/jquery.min',
 
     /* Modules */
-    stand: 'stand/dist/stand'
+    stand: 'stand/stand.min'
   },
   shim: {
 
