@@ -66,7 +66,7 @@ img {
   width: 100%;
   overflow: hidden;
   position: relative;
-  height: 600px;
+  height: 200px;
   margin-bottom: 60px;
 }
 
@@ -139,8 +139,8 @@ img {
   }
 
   .hero-img {
-    /*height: 400px;*/
-    /*margin-bottom: 40px;*/
+    height: 400px;
+    margin-bottom: 40px;
   }
 }
 @media (min-width: 992px) {
@@ -149,8 +149,8 @@ img {
   }
 
   .hero-img {
-    /*height: 600px;*/
-    /*margin-bottom: 60px;*/
+    height: 600px;
+    margin-bottom: 60px;
   }
 }
 @media (min-width: 1200px) {
@@ -159,7 +159,7 @@ img {
   }
 
   .hero-img {
-    /*height: 600px;*/
-    /*margin-bottom: 60px;*/
+    height: 600px;
+    margin-bottom: 60px;
   }
 }

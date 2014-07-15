@@ -21,9 +21,54 @@ module.exports = function(grunt) {
           keepalive: true
         }
       }
+    },
+    concat: {
+      css: {
+        src: ['css/pure.css', 'css/main.css'],
+        dest: 'css/all.css'
+      }
+    },
+    cssmin: {
+      combine: {
+        files: {
+          'css/all.min.css': ['css/all.css']
+        }
+      }
+    },
+    'gh-pages': {
+      options: {
+        base: '.'
+      },
+      src: [
+        'index.html',
+        'img/*',
+        'css/all.min.css',
+        'data/**/*',
+        'js/vendor/*.js',
+        'js/main.min.js'
+      ]
+    },
+    requirejs: {
+      compile: {
+        options: {
+          baseUrl: './js',
+          paths: {
+            /* Vendor */
+            raphael: 'vendor/raphael',
+            underscore: 'vendor/underscore',
+            jquery: 'vendor/jquery.min',
+
+            /* Modules */
+            stand: 'stand/stand.min'
+          },
+          name: 'main',
+          out: 'js/main.min.js'
+        }
+      }
     }
   });
 
-
   require('load-grunt-tasks')(grunt);
+
+  grunt.registerTask('build', ['concat', 'cssmin', 'requirejs']);
 }

@@ -7,7 +7,7 @@ require.config({
     jquery: 'vendor/jquery.min',
 
     /* Modules */
-    stand: 'stand/dist/stand'
+    stand: 'stand/stand.min'
   },
   shim: {
 
@@ -39,14 +39,15 @@ $(function() {
   $('#footer').on('click', 'a', function(e) {
     e.preventDefault();
     var $this = $(this);
-    $.get($this.attr('href')).done(function(result) {
-      $('.stand-pic').attr('src', '/data/pic/' + result.standPic);
-      $('.master-pic').attr('src', '/data/pic/' + result.masterPic);
+    $.get($this.data('info')).done(function(result) {
+      $('.stand-pic').attr('src', 'data/pic/' + result.standPic);
+      $('.master-pic').attr('src', 'data/pic/' + result.masterPic);
       $('.stand-name').text(result.standName);
       $('.master-name').text(result.masterName);
       $this.parent().addClass('active').siblings().removeClass('active');
       if(!stand) {
         $('.stand-md').slideDown(function() {
+          $(window).scrollTop($('.hero-img').height());
           $('.info-md img').addClass('active');
           stand = new Stand({
             r: 150,
