@@ -39,9 +39,9 @@ $(function() {
   $('#footer').on('click', 'a', function(e) {
     e.preventDefault();
     var $this = $(this);
-    $.get($this.attr('href')).done(function(result) {
-      $('.stand-pic').attr('src', '/data/pic/' + result.standPic);
-      $('.master-pic').attr('src', '/data/pic/' + result.masterPic);
+    $.get($this.data('info')).done(function(result) {
+      $('.stand-pic').attr('src', 'data/pic/' + result.standPic);
+      $('.master-pic').attr('src', 'data/pic/' + result.masterPic);
       $('.stand-name').text(result.standName);
       $('.master-name').text(result.masterName);
       $this.parent().addClass('active').siblings().removeClass('active');
