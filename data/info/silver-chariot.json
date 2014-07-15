@@ -1,0 +1,15 @@
+{
+  "theme": "#999",
+  "standName": "Silver Chariot",
+  "standPic": "silver-chariot.jpg",
+  "masterName": "Jean Pierre Polnareff",
+  "masterPic": "5.jpg",
+  "status": {
+    "破坏力": 3,
+    "速度": 5,
+    "射程距离": 3,
+    "持久力": 4,
+    "精密动作性": 4,
+    "成长性": 3
+  }
+}

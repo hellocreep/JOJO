@@ -1,0 +1,15 @@
+{
+  "theme": "#aa4095",
+  "standName": "Star Platinum",
+  "standPic": "star-platinum.jpg",
+  "masterName": "Kujou Jotarou",
+  "masterPic": "1.jpg",
+  "status": {
+    "破坏力": 5,
+    "速度": 5,
+    "射程距离": 3,
+    "持久力": 5,
+    "精密动作性": 5,
+    "成长性": 5
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "theme": "#7fc06e",
+  "standName": "Hierophant Green",
+  "standPic": "hierophant-green.jpg",
+  "masterName": "Noriaki Kakyoin",
+  "masterPic": "3.jpg",
+  "status": {
+    "破坏力": 3,
+    "速度": 4,
+    "射程距离": 5,
+    "持久力": 4,
+    "精密动作性": 3,
+    "成长性": 2
+  }
+}

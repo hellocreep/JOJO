@@ -1,0 +1,15 @@
+{
+  "theme": "#AB1BEE",
+  "standName": "Hermit Purple",
+  "standPic": "hermit-purple.jpg",
+  "masterName": "Joseph Joestar",
+  "masterPic": "4.jpg",
+  "status": {
+    "破坏力": 2,
+    "速度": 3,
+    "射程距离": 2,
+    "持久力": 5,
+    "精密动作性": 2,
+    "成长性": 1
+  }
+}
